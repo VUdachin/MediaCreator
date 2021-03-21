@@ -17,6 +17,7 @@
 		B152945825FE1354002349B9 /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B152945725FE133D002349B9 /* 1.mp4 */; };
 		B152945B25FEAF0E002349B9 /* 2.MOV in Resources */ = {isa = PBXBuildFile; fileRef = B152945A25FEAF0E002349B9 /* 2.MOV */; };
 		B152945E25FEB10E002349B9 /* track.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B152945D25FEB10E002349B9 /* track.mp3 */; };
+		B1D2B90C2607E11C00B21A66 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B1D2B90B2607E11C00B21A66 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		B152945725FE133D002349B9 /* 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.mp4; sourceTree = "<group>"; };
 		B152945A25FEAF0E002349B9 /* 2.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 2.MOV; sourceTree = "<group>"; };
 		B152945D25FEB10E002349B9 /* track.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = track.mp3; sourceTree = "<group>"; };
+		B1D2B90B2607E11C00B21A66 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 		B152942125FD2964002349B9 = {
 			isa = PBXGroup;
 			children = (
+				B1D2B90B2607E11C00B21A66 /* README.md */,
 				B152942C25FD2964002349B9 /* MediaCreator */,
 				B152942B25FD2964002349B9 /* Products */,
 			);
@@ -162,6 +165,7 @@
 			files = (
 				B152945825FE1354002349B9 /* 1.mp4 in Resources */,
 				B152945B25FEAF0E002349B9 /* 2.MOV in Resources */,
+				B1D2B90C2607E11C00B21A66 /* README.md in Resources */,
 				B152945E25FEB10E002349B9 /* track.mp3 in Resources */,
 				B152943A25FD2964002349B9 /* LaunchScreen.storyboard in Resources */,
 				B152943725FD2964002349B9 /* Assets.xcassets in Resources */,

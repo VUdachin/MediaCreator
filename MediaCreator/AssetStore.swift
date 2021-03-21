@@ -60,12 +60,37 @@ class AssetStore {
         
     }
     
-//    func export(asset: AVAsset, completion: @escaping (Bool) -> Void) {
-//        guard let documentDirectory = FileManager.default
-//                .urls(for: .documentDirectory, in: .userDomainMask).first else { fatalError() }
-//        let url
-//        
-//    }
+    func export(asset: AVAsset, completion: @escaping (Bool) -> Void) {
+        guard let documentDirectory = FileManager.default
+                .urls(for: .documentDirectory, in: .userDomainMask).first else { fatalError() }
+        let url = documentDirectory.appendingPathComponent("mergedVideo.mov") // заменить на название файла
+        
+        guard let exporter = AVAssetExportSession(asset: asset, presetName: AVAssetExportPreset1280x720) else { fatalError() }
+        exporter.outputURL = url
+        exporter.outputFileType = .mov
+        
+        exporter.exportAsynchronously {
+            DispatchQueue.main.async {
+                completion(exporter.status == .completed)
+            }
+        }
+    }
+    
+    func customExport(asset: AVAsset, completion: @escaping (Bool) -> Void) {
+        guard let documentDirectory = FileManager.default
+                .urls(for: .documentDirectory, in: .userDomainMask).first else { fatalError() }
+        let url = documentDirectory.appendingPathComponent("mergedVideo.mov") // заменить на название файла
+        
+        guard let exporter = AVAssetExportSession(asset: asset, presetName: AVAssetExportPreset1280x720) else { fatalError() }
+        exporter.outputURL = url
+        exporter.outputFileType = .mov
+        
+        exporter.exportAsynchronously {
+            DispatchQueue.main.async {
+                completion(exporter.status == .completed)
+            }
+        }
+    }
 
 }
 
